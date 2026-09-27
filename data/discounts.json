@@ -1,0 +1,15 @@
+{
+  "discounts": [
+    {
+      "id": "e417198253df",
+      "code": "WELCOME10",
+      "label": "",
+      "type": "percent",
+      "value": 10,
+      "minSubtotal": 999,
+      "maxDiscount": 0,
+      "active": true,
+      "createdAt": "2026-09-24T18:02:21.742Z"
+    }
+  ]
+}

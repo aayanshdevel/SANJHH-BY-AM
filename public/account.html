@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account — SANJHH BY AM</title>
+  <meta name="description" content="Manage your saved details and track your SANJHH BY AM orders.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="siteChrome"></div>
+  <main class="container">
+    <div class="page-head" style="background:none"><span class="kicker">Welcome</span><h1>My Account</h1></div>
+    <div class="checkout-layout" style="max-width:980px;margin:0 auto;padding-top:10px">
+      <form class="panel" id="profileForm">
+        <h3>Saved Delivery Details</h3>
+        <p style="font-size:13px;color:var(--taupe);margin-top:-8px">Stored only on this device to speed up checkout. Customer accounts with order history sync are coming soon.</p>
+        <div class="form-grid">
+          <div class="field full"><label>Full Name</label><input id="a-name" autocomplete="name"></div>
+          <div class="field"><label>Mobile</label><input id="a-phone" maxlength="10" inputmode="numeric"></div>
+          <div class="field"><label>Email</label><input id="a-email" type="email"></div>
+          <div class="field full"><label>Address</label><textarea id="a-address" rows="3"></textarea></div>
+          <div class="field"><label>City</label><input id="a-city"></div>
+          <div class="field"><label>State</label><input id="a-state"></div>
+          <div class="field"><label>PIN Code</label><input id="a-pincode" maxlength="6" inputmode="numeric"></div>
+        </div>
+        <button class="btn block" style="margin-top:18px" type="submit">Save Details</button>
+      </form>
+      <div>
+        <div class="panel" style="margin-bottom:20px">
+          <h3>Your Orders</h3>
+          <p style="font-size:13.5px;color:var(--charcoal)">Track any order with its order ID and the email or mobile used at checkout.</p>
+          <a class="btn sm ghost" href="track-order.html">Track an Order</a>
+          <div id="recentOrders" style="margin-top:16px"></div>
+        </div>
+        <div class="panel">
+          <h3>Wishlist</h3>
+          <p style="font-size:13.5px;color:var(--charcoal)" id="wishCountNote"></p>
+          <a class="btn sm ghost" href="wishlist.html">View Wishlist</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="siteFooter"></div>
+  <script src="js/app.js"></script>
+  <script>
+    const F = ['name','phone','email','address','city','state','pincode'];
+    SBAM.ready(() => {
+      try {
+        const saved = JSON.parse(localStorage.getItem('sbam_customer') || 'null');
+        if (saved) F.forEach(k => { const el = document.getElementById('a-' + k); if (el && saved[k]) el.value = saved[k]; });
+      } catch {}
+      const n = SBAM.wishlist().length;
+      document.getElementById('wishCountNote').textContent = n ? `You have ${n} piece${n>1?'s':''} saved.` : 'Nothing saved yet — tap the heart on any piece.';
+      const recents = JSON.parse(localStorage.getItem('sbam_orders') || '[]');
+      if (recents.length) {
+        document.getElementById('recentOrders').innerHTML =
+          '<div class="opt-label" style="margin-bottom:8px">Recent orders on this device</div>' +
+          recents.slice(-5).reverse().map(o =>
+            `<div class="summary-line"><a style="text-decoration:underline" href="order-success.html?id=${encodeURIComponent(o.id)}&key=${encodeURIComponent(o.key)}">${SBAM.esc(o.id)}</a><span>${new Date(o.at).toLocaleDateString('en-IN')}</span></div>`).join('');
+      }
+    });
+    document.getElementById('profileForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = {};
+      F.forEach(k => data[k] = document.getElementById('a-' + k).value.trim());
+      localStorage.setItem('sbam_customer', JSON.stringify(data));
+      SBAM.toast('Details saved');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{
+  "store": {
+    "name": "SANJHH BY AM",
+    "tagline": "Good clothes, brighter days",
+    "announcement": "NEW SEASON — DISCOVER SANJHH BY AM",
+    "currency": "INR",
+    "supportNote": "Reach us through the contact page — we reply within business hours."
+  },
+  "shipping": {
+    "flatRate": 79,
+    "freeAbove": 1999,
+    "codEnabled": true,
+    "codCharge": 49,
+    "provider": "",
+    "courierOptions": [],
+    "dispatchNote": "Each piece is prepared to order. Dispatch timelines are shared at checkout and in your order updates."
+  },
+  "payments": {
+    "onlineEnabled": true,
+    "gateway": "razorpay",
+    "mode": "demo"
+  },
+  "tax": {
+    "enabled": false,
+    "label": "GST",
+    "gstin": "",
+    "ratePct": 0,
+    "note": "Configure GST details from Admin → Store Settings once registered."
+  },
+  "invoice": {
+    "prefix": "SBAM-INV-",
+    "nextNumber": 1001,
+    "address": "",
+    "footerNote": "Thank you for shopping with SANJHH BY AM."
+  },
+  "orders": {
+    "prefix": "SBAM-",
+    "nextNumber": 10001
+  }
+}

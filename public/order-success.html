@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Confirmed — SANJHH BY AM</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="siteChrome"></div>
+  <main class="container">
+    <div class="checkout-layout" style="max-width:980px;margin:0 auto">
+      <div class="panel" id="orderBox">
+        <div class="skeleton" style="height:32px;margin-bottom:14px"></div>
+        <div class="skeleton" style="height:18px;width:60%"></div>
+      </div>
+      <div class="panel">
+        <h3>Order Journey</h3>
+        <ul class="timeline" id="timeline"></ul>
+      </div>
+    </div>
+  </main>
+  <div id="siteFooter"></div>
+  <script src="js/app.js"></script>
+  <script>
+    const q = new URLSearchParams(location.search);
+    const oid = q.get('id'), key = q.get('key');
+    SBAM.ready(async () => {
+      const box = document.getElementById('orderBox');
+      let data;
+      try {
+        const r = await fetch(`/api/orders/${encodeURIComponent(oid)}?key=${encodeURIComponent(key)}`);
+        data = await r.json();
+        if (!r.ok) throw new Error(data.error);
+      } catch (e) {
+        box.innerHTML = `<div class="empty-state"><div class="big">Order not found</div>
+          <p>Use Track Order with your order ID and contact details.</p>
+          <a class="btn sm" href="track-order.html">Track Order</a></div>`;
+        return;
+      }
+      const o = data.order;
+      box.innerHTML = `
+        <span class="kicker">Thank You</span>
+        <h1 class="serif" style="font-size:32px;margin:10px 0 6px">Order confirmed ♡</h1>
+        <p style="color:var(--charcoal)">Your order <strong>${SBAM.esc(o.orderId)}</strong> has been placed successfully.
+        Each SANJHH BY AM piece is prepared to order with care — we'll keep the status updated at every step.</p>
+        <div style="border:1px solid var(--line);padding:16px;margin:16px 0;background:var(--cream)">
+          <div class="summary-line"><span>Status</span><strong>${SBAM.esc(o.status)}</strong></div>
+          <div class="summary-line"><span>Payment</span><span>${SBAM.esc(o.paymentStatus)}</span></div>
+          <div class="summary-line"><span>Items</span><span>${o.items.reduce((s,i)=>s+i.qty,0)}</span></div>
+          <div class="summary-line total"><span>Total</span><span>${SBAM.money(o.total)}</span></div>
+        </div>
+        ${o.items.map(i => `<div class="mini-item"><img src="${i.image}" alt="${SBAM.esc(i.name)}">
+          <div style="flex:1"><div>${SBAM.esc(i.name)}</div><div class="m">Size ${i.size} × ${i.qty}</div></div>
+          <div>${SBAM.money(i.price * i.qty)}</div></div>`).join('')}
+        <div style="display:flex;gap:10px;margin-top:18px;flex-wrap:wrap">
+          <a class="btn sm" target="_blank" href="/api/orders/${encodeURIComponent(o.orderId)}/invoice?key=${encodeURIComponent(key)}">View Invoice</a>
+          <a class="btn sm ghost" href="track-order.html">Track Order</a>
+          <a class="btn sm ghost" href="shop.html">Continue Shopping</a>
+        </div>
+        <p style="font-size:12px;color:var(--taupe);margin-top:14px">Save your order ID <strong>${SBAM.esc(o.orderId)}</strong> — you can track anytime with it and your email or mobile number.</p>`;
+      const flow = o.statusFlow;
+      const currentIdx = flow.indexOf(o.status);
+      const at = (s) => { const h = o.statusHistory.find(x => x.status === s); return h ? new Date(h.at).toLocaleString('en-IN', {day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}) : ''; };
+      document.getElementById('timeline').innerHTML = flow.map((s, i) => `
+        <li class="${i < currentIdx ? 'done' : i === currentIdx ? 'current' : ''}">
+          <span class="dot"></span>
+          <div><div class="s">${s}</div>${at(s) ? `<div class="at">${at(s)}</div>` : ''}</div>
+        </li>`).join('');
+    });
+  </script>
+</body>
+</html>

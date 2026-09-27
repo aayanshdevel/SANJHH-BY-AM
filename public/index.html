@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SANJHH BY AM — Contemporary Women's Fashion | Dresses, Jumpsuits & Co-ord Sets</title>
+  <meta name="description" content="Discover SANJHH BY AM — contemporary women's fashion made for brighter days. Shop dresses, jumpsuits, co-ord sets and ethnic occasion wear with timeless silhouettes and thoughtful details.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23211d17'/><text x='16' y='22' font-family='Georgia' font-size='18' fill='%23faf7f1' text-anchor='middle'>S</text></svg>">
+</head>
+<body>
+  <div id="siteChrome"></div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="kicker">The New Season Edit</span>
+          <h1>Style that feels<br>like you.</h1>
+          <p class="sub">Contemporary silhouettes, effortless elegance. Timeless pieces designed for brighter days.</p>
+          <div><a class="btn" href="shop.html?tag=new">Shop New Arrivals</a></div>
+        </div>
+        <div class="hero-media">
+          <img src="images/products/rose-belle-gingham-dress/front.jpg" alt="SANJHH BY AM — Rosé Belle Gingham Dress, pink gingham halter maxi dress" fetchpriority="high">
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW ARRIVALS -->
+    <section class="block">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Just In</span>
+          <h2>New Arrivals</h2>
+          <div class="rule"></div>
+        </div>
+        <div class="grid reveal" id="newArrivals"></div>
+        <div class="center mt-30"><a class="btn ghost" href="shop.html?tag=new">View All New Arrivals</a></div>
+      </div>
+    </section>
+
+    <!-- SHOP BY STYLE -->
+    <section class="block tight" style="background:var(--cream);border-block:1px solid var(--line-soft)">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Find Your Silhouette</span>
+          <h2>Shop by Style</h2>
+          <div class="rule"></div>
+        </div>
+        <div class="cat-grid reveal" id="catGrid"></div>
+      </div>
+    </section>
+
+    <!-- BEST SELLERS -->
+    <section class="block">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Most Loved</span>
+          <h2>Best Sellers</h2>
+          <div class="rule"></div>
+        </div>
+        <div class="grid reveal" id="bestSellers"></div>
+        <div class="center mt-30"><a class="btn ghost" href="shop.html?tag=bestseller">Shop Best Sellers</a></div>
+      </div>
+    </section>
+
+    <!-- EDITORIAL CAMPAIGN -->
+    <section class="editorial">
+      <div class="editorial-grid">
+        <div class="editorial-media">
+          <img src="images/editorial/campaign-fabrics.jpg" alt="Softly draped fabrics in ivory, rose and powder blue — SANJHH BY AM campaign still life" loading="lazy">
+        </div>
+        <div class="editorial-copy reveal">
+          <span class="kicker">The Campaign</span>
+          <h2>Details make it timeless.</h2>
+          <p>Every SANJHH BY AM piece begins with the small things — a hand-tied bow, a smocked back, a daisy-trimmed hem. Quiet details that turn everyday dressing into something worth remembering.</p>
+          <p style="font-family:var(--serif);font-style:italic;font-size:18px;color:var(--gold)">Light. Breathable. Beautifully you.</p>
+          <a class="btn" href="shop.html">Explore the Collection</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRAND STORY -->
+    <section class="block">
+      <div class="container story reveal">
+        <span class="kicker">Our Story</span>
+        <h2>Made for brighter days</h2>
+        <p>SANJHH BY AM is a contemporary women's fashion label built around one belief — good clothes make brighter days. We design for the woman who dresses for herself: silhouettes that move with her, colours that lift her mood, and details that feel personal rather than loud.</p>
+        <p>From breezy jumpsuits and tailored co-ords to occasion-ready shararas, every piece is created to be worn again and again — timeless rather than trend-led, elegant rather than excessive.</p>
+        <div class="sig">Wear your story ♡</div>
+      </div>
+    </section>
+
+    <!-- SECOND EDITORIAL STRIP -->
+    <section class="editorial">
+      <div class="editorial-grid" style="grid-template-columns:.9fr 1.1fr">
+        <div class="editorial-copy reveal">
+          <span class="kicker">Ethnic &amp; Occasion</span>
+          <h2>Tradition, in every thread.</h2>
+          <p>Heirloom-inspired shararas and breathable cotton farshi sets — traditionally inspired, modernly yours.</p>
+          <a class="btn" href="shop.html?cat=ethnic-occasion">Shop Occasion Wear</a>
+        </div>
+        <div class="editorial-media">
+          <img src="images/editorial/campaign-courtyard.jpg" alt="Sunlit courtyard with arched doorway and flowering plants — SANJHH BY AM campaign backdrop" loading="lazy">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="siteFooter"></div>
+  <script src="js/app.js"></script>
+  <script>
+    SBAM.ready(() => {
+      const P = SBAM.products;
+      document.getElementById('newArrivals').innerHTML =
+        P.filter(p => p.flags.newArrival).slice(0, 4).map(p => SBAM.productCard(p)).join('');
+      document.getElementById('bestSellers').innerHTML =
+        P.filter(p => p.flags.bestseller).slice(0, 4).map(p => SBAM.productCard(p)).join('');
+
+      const catImages = {
+        'dresses': 'images/products/coral-whisper-tiered-dress/front-angle.jpg',
+        'jumpsuits': 'images/products/azure-breeze-jumpsuit/front-angle.jpg',
+        'coord-sets': 'images/products/ivory-bloom-coord-set/front-angle.jpg',
+        'ethnic-occasion': 'images/products/olive-heirloom-sharara-set/front.jpg',
+      };
+      document.getElementById('catGrid').innerHTML = Object.entries(SBAM.CATEGORY_LABELS)
+        .filter(([key]) => P.some(p => p.category === key))
+        .map(([key, label]) => {
+          const count = P.filter(p => p.category === key).length;
+          return `<a class="cat-tile" href="shop.html?cat=${key}">
+            <img src="${catImages[key]}" alt="${label} — SANJHH BY AM" loading="lazy">
+            <div class="label"><div class="t">${label}</div><div class="c">${count} ${count === 1 ? 'style' : 'styles'}</div></div>
+          </a>`;
+        }).join('');
+    });
+  </script>
+</body>
+</html>

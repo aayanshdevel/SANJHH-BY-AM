@@ -1,0 +1,988 @@
+{
+  "products": [
+    {
+      "id": "p-rose-belle",
+      "slug": "rose-belle-gingham-dress",
+      "sku": "SBAM-DR-001",
+      "name": "Rosé Belle Gingham Dress",
+      "category": "dresses",
+      "mrp": 2499,
+      "salePrice": 1499,
+      "discountPct": 40,
+      "color": {
+        "name": "Pink Gingham",
+        "hex": "#eba8bc"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "stock": {
+        "S": 10,
+        "M": 14,
+        "L": 12,
+        "XL": 8,
+        "XXL": 6
+      },
+      "images": [
+        {
+          "src": "/images/products/rose-belle-gingham-dress/front.jpg",
+          "alt": "Rosé Belle Gingham Dress — pink gingham halter maxi dress, front view"
+        },
+        {
+          "src": "/images/products/rose-belle-gingham-dress/front-angle.jpg",
+          "alt": "Rosé Belle Gingham Dress — front angle view showing fitted bodice"
+        },
+        {
+          "src": "/images/products/rose-belle-gingham-dress/side.jpg",
+          "alt": "Rosé Belle Gingham Dress — side view with flowing A-line skirt"
+        },
+        {
+          "src": "/images/products/rose-belle-gingham-dress/back.jpg",
+          "alt": "Rosé Belle Gingham Dress — open back with tie-up halter"
+        },
+        {
+          "src": "/images/products/rose-belle-gingham-dress/back-angle.jpg",
+          "alt": "Rosé Belle Gingham Dress — back angle view"
+        },
+        {
+          "src": "/images/products/rose-belle-gingham-dress/details.jpg",
+          "alt": "Rosé Belle Gingham Dress — detail sheet with neckline, waist, fabric and back details"
+        }
+      ],
+      "description": "A romantic pink gingham maxi with a deep V halter neckline, fitted bodice and a flowing A-line skirt. Timeless, feminine and effortless — made for brighter days.",
+      "details": [
+        "Halter neckline with a deep V opening",
+        "Fitted bodice with a natural waist seam",
+        "Classic gingham pattern with a soft texture",
+        "Flowing A-line silhouette with beautiful drape",
+        "Open back with a tie-up halter"
+      ],
+      "fabric": "Fabric details coming soon",
+      "fit": "Fitted bodice with a flowing A-line skirt",
+      "care": [
+        "Machine wash cold",
+        "Do not bleach",
+        "Tumble dry low",
+        "Iron on low heat"
+      ],
+      "occasions": [
+        "Brunch",
+        "Vacation",
+        "Date"
+      ],
+      "tags": [
+        "dress",
+        "maxi",
+        "gingham",
+        "halter",
+        "pink"
+      ],
+      "flags": {
+        "newArrival": true,
+        "bestseller": true,
+        "sale": true,
+        "featured": true
+      },
+      "published": true,
+      "createdAt": "2026-09-10"
+    },
+    {
+      "id": "p-coral-whisper",
+      "slug": "coral-whisper-tiered-dress",
+      "sku": "SBAM-DR-002",
+      "name": "Coral Whisper Tiered Dress",
+      "category": "dresses",
+      "mrp": 1999,
+      "salePrice": 1199,
+      "discountPct": 40,
+      "color": {
+        "name": "Cream & Coral Stripe",
+        "hex": "#f0b3a4"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "stock": {
+        "S": 12,
+        "M": 15,
+        "L": 12,
+        "XL": 9,
+        "XXL": 7
+      },
+      "images": [
+        {
+          "src": "/images/products/coral-whisper-tiered-dress/front.jpg",
+          "alt": "Coral Whisper Tiered Dress — cream and coral stripe maxi dress, front view"
+        },
+        {
+          "src": "/images/products/coral-whisper-tiered-dress/front-angle.jpg",
+          "alt": "Coral Whisper Tiered Dress — front angle view with waist tie"
+        },
+        {
+          "src": "/images/products/coral-whisper-tiered-dress/side.jpg",
+          "alt": "Coral Whisper Tiered Dress — side view showing tiered construction"
+        },
+        {
+          "src": "/images/products/coral-whisper-tiered-dress/back.jpg",
+          "alt": "Coral Whisper Tiered Dress — back view"
+        },
+        {
+          "src": "/images/products/coral-whisper-tiered-dress/back-angle.jpg",
+          "alt": "Coral Whisper Tiered Dress — back angle view"
+        },
+        {
+          "src": "/images/products/coral-whisper-tiered-dress/details.jpg",
+          "alt": "Coral Whisper Tiered Dress — detail sheet with strap, waist tie, tier and fabric details"
+        }
+      ],
+      "description": "A breezy tiered maxi in fine cream and coral stripes, with a square neckline, adjustable waist tie and beautifully alternating stripe directions across each tier.",
+      "details": [
+        "Square neckline with asymmetric straps (one wide, one narrow)",
+        "Adjustable waist tie for a flattering fit",
+        "Tiered construction with alternating stripe directions",
+        "Flowing silhouette with neat hem finishing"
+      ],
+      "fabric": "Premium breathable woven fabric with fine stripes",
+      "fit": "Relaxed tiered fit, cinched at the waist with a tie",
+      "care": [
+        "Machine wash cold",
+        "Do not bleach",
+        "Tumble dry low",
+        "Iron on low heat"
+      ],
+      "occasions": [
+        "Brunch",
+        "Vacation",
+        "Everyday"
+      ],
+      "tags": [
+        "dress",
+        "maxi",
+        "tiered",
+        "stripe",
+        "coral"
+      ],
+      "flags": {
+        "newArrival": true,
+        "bestseller": false,
+        "sale": true,
+        "featured": false
+      },
+      "published": true,
+      "createdAt": "2026-09-08"
+    },
+    {
+      "id": "p-azure-muse",
+      "slug": "azure-muse-denim-jumpsuit",
+      "sku": "SBAM-JP-001",
+      "name": "Azure Muse Denim Jumpsuit",
+      "category": "jumpsuits",
+      "mrp": 2499,
+      "salePrice": 1599,
+      "discountPct": 36,
+      "color": {
+        "name": "Denim Blue",
+        "hex": "#5a7fb0"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "stock": {
+        "S": 6,
+        "M": 8,
+        "L": 8,
+        "XL": 5,
+        "XXL": 4
+      },
+      "images": [
+        {
+          "src": "/images/products/azure-muse-denim-jumpsuit/placeholder.jpg",
+          "alt": "Azure Muse Denim Jumpsuit — product imagery coming soon"
+        }
+      ],
+      "description": "A relaxed denim jumpsuit with an easy, contemporary silhouette. Product photography is being shot — full imagery coming soon.",
+      "details": [
+        "Wide-leg silhouette",
+        "Functional pockets"
+      ],
+      "fabric": "Fabric details coming soon",
+      "fit": "Relaxed fit with a wide leg",
+      "care": [
+        "Machine wash cold",
+        "Do not bleach",
+        "Tumble dry low",
+        "Iron on low heat"
+      ],
+      "occasions": [
+        "Everyday",
+        "Casual"
+      ],
+      "tags": [
+        "jumpsuit",
+        "denim",
+        "blue"
+      ],
+      "flags": {
+        "newArrival": false,
+        "bestseller": false,
+        "sale": true,
+        "featured": false
+      },
+      "published": true,
+      "createdAt": "2026-08-20"
+    },
+    {
+      "id": "p-midnight-muse",
+      "slug": "midnight-muse-coord-set",
+      "sku": "SBAM-CO-001",
+      "name": "Midnight Muse Co-ord Set",
+      "category": "coord-sets",
+      "mrp": 1999,
+      "salePrice": 1299,
+      "discountPct": 35,
+      "color": {
+        "name": "Classic Navy",
+        "hex": "#2e3a5c"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "stock": {
+        "S": 9,
+        "M": 12,
+        "L": 11,
+        "XL": 7,
+        "XXL": 5
+      },
+      "images": [
+        {
+          "src": "/images/products/midnight-muse-coord-set/front.jpg",
+          "alt": "Midnight Muse Co-ord Set — classic navy vest and wide-leg trousers, front view"
+        },
+        {
+          "src": "/images/products/midnight-muse-coord-set/front-angle.jpg",
+          "alt": "Midnight Muse Co-ord Set — front angle view with button detailing"
+        },
+        {
+          "src": "/images/products/midnight-muse-coord-set/side.jpg",
+          "alt": "Midnight Muse Co-ord Set — side view"
+        },
+        {
+          "src": "/images/products/midnight-muse-coord-set/back.jpg",
+          "alt": "Midnight Muse Co-ord Set — back view with wide straps"
+        },
+        {
+          "src": "/images/products/midnight-muse-coord-set/back-angle.jpg",
+          "alt": "Midnight Muse Co-ord Set — back angle view"
+        },
+        {
+          "src": "/images/products/midnight-muse-coord-set/look.jpg",
+          "alt": "Midnight Muse Co-ord Set — another styled look"
+        },
+        {
+          "src": "/images/products/midnight-muse-coord-set/details.jpg",
+          "alt": "Midnight Muse Co-ord Set — detail sheet with neckline, button, waist, pocket and fabric details"
+        }
+      ],
+      "description": "A tailored navy co-ord with a square-neck button vest and dramatic wide-leg trousers. Subtle texture, lasting elegance — structured yet easy to wear all day.",
+      "details": [
+        "Classy square neckline with button detailing",
+        "Premium matte buttons for a refined look",
+        "Tailored vest with a stylish pointed hem",
+        "Functional side pockets for everyday ease",
+        "Wide straps with a comfortable fit",
+        "Wide-leg hem with neat finishing"
+      ],
+      "fabric": "Premium linen-blend fabric — breathable, lightweight and soft",
+      "fit": "Structured tailored fit with a wide-leg trouser",
+      "care": [
+        "Machine wash cold",
+        "Do not bleach",
+        "Tumble dry low",
+        "Iron on low heat"
+      ],
+      "occasions": [
+        "Work",
+        "Evening",
+        "Everyday"
+      ],
+      "tags": [
+        "co-ord",
+        "vest",
+        "wide-leg",
+        "navy"
+      ],
+      "flags": {
+        "newArrival": false,
+        "bestseller": true,
+        "sale": true,
+        "featured": true
+      },
+      "published": true,
+      "createdAt": "2026-08-28"
+    },
+    {
+      "id": "p-rose-charm",
+      "slug": "rose-charm-coord-set",
+      "sku": "SBAM-CO-002",
+      "name": "Rosé Charm Co-ord Set",
+      "category": "coord-sets",
+      "mrp": 2299,
+      "salePrice": 1499,
+      "discountPct": 35,
+      "color": {
+        "name": "Dusty Rose",
+        "hex": "#c67a80"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "stock": {
+        "S": 8,
+        "M": 11,
+        "L": 10,
+        "XL": 7,
+        "XXL": 5
+      },
+      "images": [
+        {
+          "src": "/images/products/rose-charm-coord-set/front.jpg",
+          "alt": "Rosé Charm Co-ord Set — dusty rose tie-strap top with tassel hem and gathered pants, front view"
+        },
+        {
+          "src": "/images/products/rose-charm-coord-set/front-angle.jpg",
+          "alt": "Rosé Charm Co-ord Set — front angle view with side cut-outs"
+        },
+        {
+          "src": "/images/products/rose-charm-coord-set/side.jpg",
+          "alt": "Rosé Charm Co-ord Set — side view with shell-detail cut-out"
+        },
+        {
+          "src": "/images/products/rose-charm-coord-set/back.jpg",
+          "alt": "Rosé Charm Co-ord Set — back view with tie-up shoulder straps"
+        },
+        {
+          "src": "/images/products/rose-charm-coord-set/back-angle.jpg",
+          "alt": "Rosé Charm Co-ord Set — back angle view"
+        },
+        {
+          "src": "/images/products/rose-charm-coord-set/look.jpg",
+          "alt": "Rosé Charm Co-ord Set — another styled look"
+        },
+        {
+          "src": "/images/products/rose-charm-coord-set/details.jpg",
+          "alt": "Rosé Charm Co-ord Set — detail sheet with neckline, cut-out, tassel hem and fabric details"
+        }
+      ],
+      "description": "An easy, boho-spirited co-ord in dusty rose — a square-neck tunic with tie-up shoulder straps, shell-trimmed cut-outs and a handcrafted tassel hem, paired with comfortable gathered pants.",
+      "details": [
+        "Square neckline with tie-up shoulder straps",
+        "Elegant side cut-outs with shell detailing",
+        "Handcrafted tassel trim for a playful look",
+        "Comfortable elastic waist for an easy fit",
+        "Gathered hem for a stylish traditional touch"
+      ],
+      "fabric": "Premium linen-blend fabric — soft, breathable and lightweight",
+      "fit": "Relaxed fit with an elasticated waist",
+      "care": [
+        "Machine wash cold",
+        "Do not bleach",
+        "Tumble dry low",
+        "Iron on low heat"
+      ],
+      "occasions": [
+        "Vacation",
+        "Festive",
+        "Brunch"
+      ],
+      "tags": [
+        "co-ord",
+        "tassel",
+        "boho",
+        "rose"
+      ],
+      "flags": {
+        "newArrival": false,
+        "bestseller": true,
+        "sale": true,
+        "featured": false
+      },
+      "published": true,
+      "createdAt": "2026-08-25"
+    },
+    {
+      "id": "p-ivory-bloom",
+      "slug": "ivory-bloom-coord-set",
+      "sku": "SBAM-CO-003",
+      "name": "Ivory Bloom Co-ord Set",
+      "category": "coord-sets",
+      "mrp": 1899,
+      "salePrice": 1199,
+      "discountPct": 37,
+      "color": {
+        "name": "Cream Ivory",
+        "hex": "#f0e8da"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "stock": {
+        "S": 10,
+        "M": 13,
+        "L": 11,
+        "XL": 8,
+        "XXL": 6
+      },
+      "images": [
+        {
+          "src": "/images/products/ivory-bloom-coord-set/front.jpg",
+          "alt": "Ivory Bloom Co-ord Set — cream ivory one-shoulder top with daisy trim and wide-leg pants, front view"
+        },
+        {
+          "src": "/images/products/ivory-bloom-coord-set/front-angle.jpg",
+          "alt": "Ivory Bloom Co-ord Set — front angle view with floral embroidery"
+        },
+        {
+          "src": "/images/products/ivory-bloom-coord-set/side.jpg",
+          "alt": "Ivory Bloom Co-ord Set — side view"
+        },
+        {
+          "src": "/images/products/ivory-bloom-coord-set/back.jpg",
+          "alt": "Ivory Bloom Co-ord Set — back view with smooth secure fit"
+        },
+        {
+          "src": "/images/products/ivory-bloom-coord-set/back-angle.jpg",
+          "alt": "Ivory Bloom Co-ord Set — back angle view"
+        },
+        {
+          "src": "/images/products/ivory-bloom-coord-set/look.jpg",
+          "alt": "Ivory Bloom Co-ord Set — another styled look"
+        },
+        {
+          "src": "/images/products/ivory-bloom-coord-set/details.jpg",
+          "alt": "Ivory Bloom Co-ord Set — detail sheet with embroidery close-up and hem details"
+        }
+      ],
+      "description": "A graceful cream-ivory co-ord with a one-shoulder top edged in handcrafted 3D daisy embroidery, a delicate waist cut-out and flowing wide-leg pants finished with a floral trim hem.",
+      "details": [
+        "One-shoulder neckline with handcrafted floral embroidery",
+        "Flattering cut-out design with delicate daisy trim",
+        "Functional side pockets for everyday ease",
+        "Premium 3D floral detailing with fine stitching",
+        "Elegant floral trim hem with neat finishing"
+      ],
+      "fabric": "Premium breathable crepe fabric — soft, lightweight and flowy",
+      "fit": "Fitted top with flowing wide-leg pants",
+      "care": [
+        "Machine wash cold",
+        "Do not bleach",
+        "Tumble dry low",
+        "Iron on low heat"
+      ],
+      "occasions": [
+        "Evening",
+        "Date",
+        "Vacation"
+      ],
+      "tags": [
+        "co-ord",
+        "one-shoulder",
+        "daisy",
+        "ivory"
+      ],
+      "flags": {
+        "newArrival": true,
+        "bestseller": false,
+        "sale": true,
+        "featured": true
+      },
+      "published": true,
+      "createdAt": "2026-09-05"
+    },
+    {
+      "id": "p-azure-bowline",
+      "slug": "azure-bowline-jumpsuit",
+      "sku": "SBAM-JP-002",
+      "name": "Azure Bowline Jumpsuit",
+      "category": "jumpsuits",
+      "mrp": 2199,
+      "salePrice": 1399,
+      "discountPct": 36,
+      "color": {
+        "name": "Blue & White Stripe",
+        "hex": "#9db8e8"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "stock": {
+        "S": 9,
+        "M": 12,
+        "L": 10,
+        "XL": 7,
+        "XXL": 5
+      },
+      "images": [
+        {
+          "src": "/images/products/azure-bowline-jumpsuit/front.jpg",
+          "alt": "Azure Bowline Jumpsuit — blue pinstripe halter look with tie-up bows and wide-leg pants, front view"
+        },
+        {
+          "src": "/images/products/azure-bowline-jumpsuit/front-angle.jpg",
+          "alt": "Azure Bowline Jumpsuit — front angle view with mandarin collar and bows"
+        },
+        {
+          "src": "/images/products/azure-bowline-jumpsuit/side.jpg",
+          "alt": "Azure Bowline Jumpsuit — side view"
+        },
+        {
+          "src": "/images/products/azure-bowline-jumpsuit/back.jpg",
+          "alt": "Azure Bowline Jumpsuit — open back with neck strap"
+        },
+        {
+          "src": "/images/products/azure-bowline-jumpsuit/back-angle.jpg",
+          "alt": "Azure Bowline Jumpsuit — back angle view"
+        },
+        {
+          "src": "/images/products/azure-bowline-jumpsuit/look.jpg",
+          "alt": "Azure Bowline Jumpsuit — another styled look"
+        },
+        {
+          "src": "/images/products/azure-bowline-jumpsuit/details.jpg",
+          "alt": "Azure Bowline Jumpsuit — detail sheet with collar, bows, waistband and fabric details"
+        }
+      ],
+      "description": "Fine blue pinstripes, an elegant mandarin collar and three adjustable tie-up bows — a polished halter silhouette with structured wide-leg pants and an open back.",
+      "details": [
+        "Elegant mandarin collar with delicate tie-up bows",
+        "Three adjustable bows for a stylish fit",
+        "Structured waistband with belt loops",
+        "Functional side pockets for everyday ease",
+        "Open back with neck strap for a flattering fit",
+        "Wide-leg hem with neat finishing"
+      ],
+      "fabric": "Premium cotton-blend fabric — soft, breathable and lightweight",
+      "fit": "Structured fit with a flattering open back",
+      "care": [
+        "Machine wash cold",
+        "Do not bleach",
+        "Tumble dry low",
+        "Iron on low heat"
+      ],
+      "occasions": [
+        "Work",
+        "Brunch",
+        "Evening"
+      ],
+      "tags": [
+        "jumpsuit",
+        "pinstripe",
+        "halter",
+        "bows",
+        "blue"
+      ],
+      "flags": {
+        "newArrival": true,
+        "bestseller": false,
+        "sale": true,
+        "featured": false
+      },
+      "published": true,
+      "createdAt": "2026-09-02"
+    },
+    {
+      "id": "p-azure-breeze",
+      "slug": "azure-breeze-jumpsuit",
+      "sku": "SBAM-JP-003",
+      "name": "Azure Breeze Jumpsuit",
+      "category": "jumpsuits",
+      "mrp": 1899,
+      "salePrice": 1199,
+      "discountPct": 37,
+      "color": {
+        "name": "Blue & White Stripe",
+        "hex": "#7f9fe0"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "stock": {
+        "S": 11,
+        "M": 14,
+        "L": 12,
+        "XL": 8,
+        "XXL": 6
+      },
+      "images": [
+        {
+          "src": "/images/products/azure-breeze-jumpsuit/front.jpg",
+          "alt": "Azure Breeze Jumpsuit — strapless blue and white stripe wide-leg jumpsuit, front view"
+        },
+        {
+          "src": "/images/products/azure-breeze-jumpsuit/front-angle.jpg",
+          "alt": "Azure Breeze Jumpsuit — front angle view with keyhole drawstring tie"
+        },
+        {
+          "src": "/images/products/azure-breeze-jumpsuit/side.jpg",
+          "alt": "Azure Breeze Jumpsuit — side view"
+        },
+        {
+          "src": "/images/products/azure-breeze-jumpsuit/back.jpg",
+          "alt": "Azure Breeze Jumpsuit — smocked back view"
+        },
+        {
+          "src": "/images/products/azure-breeze-jumpsuit/back-angle.jpg",
+          "alt": "Azure Breeze Jumpsuit — back angle view"
+        },
+        {
+          "src": "/images/products/azure-breeze-jumpsuit/look.jpg",
+          "alt": "Azure Breeze Jumpsuit — another styled look with pockets"
+        },
+        {
+          "src": "/images/products/azure-breeze-jumpsuit/details.jpg",
+          "alt": "Azure Breeze Jumpsuit — detail sheet with neckline, waist, pocket and fabric details"
+        }
+      ],
+      "description": "A breezy strapless jumpsuit in blue and white stripes with a stylish keyhole drawstring neckline, flattering smocked waist and back, and sweeping wide legs with pockets.",
+      "details": [
+        "Stylish keyhole detail with drawstring tie",
+        "Flattering smocked waist for a perfect fit",
+        "Functional side pockets",
+        "Smocked back for comfort and a better fit",
+        "Wide-leg hem with neat finishing"
+      ],
+      "fabric": "Premium breathable cotton-blend fabric — soft touch, excellent comfort",
+      "fit": "Smocked bodice with relaxed wide legs",
+      "care": [
+        "Machine wash cold",
+        "Do not bleach",
+        "Tumble dry low",
+        "Iron on low heat"
+      ],
+      "occasions": [
+        "Brunch",
+        "Vacation",
+        "Everyday"
+      ],
+      "tags": [
+        "jumpsuit",
+        "strapless",
+        "smocked",
+        "stripe",
+        "blue"
+      ],
+      "flags": {
+        "newArrival": false,
+        "bestseller": true,
+        "sale": true,
+        "featured": true
+      },
+      "published": true,
+      "createdAt": "2026-08-22"
+    },
+    {
+      "id": "p-sunlit-bloom",
+      "slug": "sunlit-bloom-coord-set",
+      "sku": "SBAM-CO-004",
+      "name": "Sunlit Bloom Co-ord Set",
+      "category": "coord-sets",
+      "mrp": 2499,
+      "salePrice": 1699,
+      "discountPct": 32,
+      "color": {
+        "name": "Sunlit Yellow",
+        "hex": "#f4c22c"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "stock": {
+        "S": 8,
+        "M": 10,
+        "L": 10,
+        "XL": 6,
+        "XXL": 5
+      },
+      "images": [
+        {
+          "src": "/images/products/sunlit-bloom-coord-set/front.jpg",
+          "alt": "Sunlit Bloom Co-ord Set — sunlit yellow one-shoulder tunic with flared pants, front view"
+        },
+        {
+          "src": "/images/products/sunlit-bloom-coord-set/front-angle.jpg",
+          "alt": "Sunlit Bloom Co-ord Set — front angle view with floral embroidery"
+        },
+        {
+          "src": "/images/products/sunlit-bloom-coord-set/side.jpg",
+          "alt": "Sunlit Bloom Co-ord Set — side view with embroidered front slit"
+        },
+        {
+          "src": "/images/products/sunlit-bloom-coord-set/back.jpg",
+          "alt": "Sunlit Bloom Co-ord Set — back view"
+        },
+        {
+          "src": "/images/products/sunlit-bloom-coord-set/back-angle.jpg",
+          "alt": "Sunlit Bloom Co-ord Set — back angle view"
+        },
+        {
+          "src": "/images/products/sunlit-bloom-coord-set/details.jpg",
+          "alt": "Sunlit Bloom Co-ord Set — detail sheet with neckline, sleeve, slit and fabric details"
+        }
+      ],
+      "description": "A radiant one-shoulder co-ord in sunlit yellow — a flowy bell-sleeve tunic with intricate floral embroidery, paired with flared pants featuring fine embroidered front slits.",
+      "details": [
+        "One-shoulder neckline with intricate floral embroidery",
+        "Flowy bell sleeve with delicate floral accents",
+        "Stylish front slit with fine embroidery",
+        "Comfortable elasticated waist for a perfect fit",
+        "Layered, flowy hem for a graceful silhouette"
+      ],
+      "fabric": "High-quality lightweight, breathable fabric with a soft, fluid drape",
+      "fit": "Flowy relaxed fit with an elasticated waist",
+      "care": [
+        "Machine wash cold",
+        "Do not bleach",
+        "Tumble dry low",
+        "Iron on low heat"
+      ],
+      "occasions": [
+        "Festive",
+        "Evening",
+        "Wedding"
+      ],
+      "tags": [
+        "co-ord",
+        "one-shoulder",
+        "embroidery",
+        "yellow",
+        "occasion"
+      ],
+      "flags": {
+        "newArrival": true,
+        "bestseller": false,
+        "sale": true,
+        "featured": true
+      },
+      "published": true,
+      "createdAt": "2026-09-12"
+    },
+    {
+      "id": "p-olive-heirloom",
+      "slug": "olive-heirloom-sharara-set",
+      "sku": "SBAM-ET-001",
+      "name": "Olive Heirloom Sharara Set",
+      "category": "ethnic-occasion",
+      "mrp": 6999,
+      "salePrice": 5999,
+      "discountPct": 14,
+      "color": {
+        "name": "Olive Green",
+        "hex": "#7a7a3a"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "stock": {
+        "S": 5,
+        "M": 7,
+        "L": 6,
+        "XL": 4,
+        "XXL": 3
+      },
+      "images": [
+        {
+          "src": "/images/products/olive-heirloom-sharara-set/front.jpg",
+          "alt": "Olive Heirloom Sharara Set — embroidered olive green peplum top with sharara, front view"
+        },
+        {
+          "src": "/images/products/olive-heirloom-sharara-set/front-angle.jpg",
+          "alt": "Olive Heirloom Sharara Set — back view with tie-up strappy back"
+        },
+        {
+          "src": "/images/products/olive-heirloom-sharara-set/side.jpg",
+          "alt": "Olive Heirloom Sharara Set — three quarter view with dupatta"
+        },
+        {
+          "src": "/images/products/olive-heirloom-sharara-set/collage.jpg",
+          "alt": "Olive Heirloom Sharara Set — styled looks and embroidery close-ups"
+        },
+        {
+          "src": "/images/products/olive-heirloom-sharara-set/details.jpg",
+          "alt": "Olive Heirloom Sharara Set — detail sheet with bodice, embroidery, dupatta and sharara details"
+        }
+      ],
+      "description": "Tradition meets today — a halter-neck peplum top covered in delicate floral embroidery, a beautifully gathered sharara with scattered motifs, and a lightweight sheer dupatta with an embroidered border. Grace in every detail.",
+      "details": [
+        "Halter neckline with intricate floral embroidery on the bodice",
+        "Delicate floral motifs with fine embellishment",
+        "Strappy tie-up back with tassel accents",
+        "Lightweight sheer dupatta with embroidered border",
+        "Beautifully gathered sharara flare with scattered motifs",
+        "Set includes: top, sharara and dupatta"
+      ],
+      "fabric": "Fabric details coming soon",
+      "fit": "Fitted bodice with a flared peplum and gathered sharara",
+      "care": [
+        "Dry clean recommended for embroidered pieces"
+      ],
+      "occasions": [
+        "Wedding",
+        "Festive",
+        "Occasion"
+      ],
+      "tags": [
+        "sharara",
+        "ethnic",
+        "embroidered",
+        "olive",
+        "occasion",
+        "dupatta"
+      ],
+      "flags": {
+        "newArrival": true,
+        "bestseller": false,
+        "sale": true,
+        "featured": true
+      },
+      "published": true,
+      "createdAt": "2026-09-15"
+    },
+    {
+      "id": "p-siyaara",
+      "slug": "siyaara-cotton-farshi-salwar-set",
+      "sku": "SBAM-ET-002",
+      "name": "Siyaara Cotton Farshi Salwar Set",
+      "category": "ethnic-occasion",
+      "mrp": 2499,
+      "salePrice": 1999,
+      "discountPct": 20,
+      "color": {
+        "name": "Sky Blue",
+        "hex": "#6fd2e0"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "stock": {
+        "S": 9,
+        "M": 12,
+        "L": 10,
+        "XL": 7,
+        "XXL": 5
+      },
+      "images": [
+        {
+          "src": "/images/products/siyaara-cotton-farshi-salwar-set/hero.jpg",
+          "alt": "Siyaara Cotton Farshi Salwar Set — sky blue floral kurta with printed farshi salwar and dupatta"
+        },
+        {
+          "src": "/images/products/siyaara-cotton-farshi-salwar-set/front.jpg",
+          "alt": "Siyaara Cotton Farshi Salwar Set — front view"
+        },
+        {
+          "src": "/images/products/siyaara-cotton-farshi-salwar-set/front-angle.jpg",
+          "alt": "Siyaara Cotton Farshi Salwar Set — front angle view with bell sleeves"
+        },
+        {
+          "src": "/images/products/siyaara-cotton-farshi-salwar-set/side.jpg",
+          "alt": "Siyaara Cotton Farshi Salwar Set — side view with tassel detail"
+        },
+        {
+          "src": "/images/products/siyaara-cotton-farshi-salwar-set/back.jpg",
+          "alt": "Siyaara Cotton Farshi Salwar Set — back view"
+        },
+        {
+          "src": "/images/products/siyaara-cotton-farshi-salwar-set/back-angle.jpg",
+          "alt": "Siyaara Cotton Farshi Salwar Set — back angle view with dupatta"
+        },
+        {
+          "src": "/images/products/siyaara-cotton-farshi-salwar-set/details.jpg",
+          "alt": "Siyaara Cotton Farshi Salwar Set — detail sheet with neckline, sleeve, palazzo, waistband and dupatta details"
+        }
+      ],
+      "description": "Every thread tells a story — a breathable sky-blue cotton kurta with signature floral prints and graceful bell sleeves, paired with a printed farshi salwar and a beautifully bordered dupatta.",
+      "details": [
+        "Elegant V-neckline with clean finishing",
+        "Graceful bell sleeves with signature floral print",
+        "Stylish tassel accents for a playful touch",
+        "Comfortable elasticated waist for a perfect fit",
+        "Beautifully printed dupatta with elegant border",
+        "Set includes: kurta, palazzo and dupatta"
+      ],
+      "fabric": "100% premium cotton — soft, breathable, with premium print quality",
+      "fit": "Relaxed fit with an elasticated waist",
+      "care": [
+        "Machine wash cold",
+        "Do not bleach",
+        "Tumble dry low",
+        "Iron on medium heat"
+      ],
+      "occasions": [
+        "Festive",
+        "Everyday",
+        "Occasion"
+      ],
+      "tags": [
+        "salwar",
+        "farshi",
+        "cotton",
+        "ethnic",
+        "printed",
+        "sky blue",
+        "dupatta"
+      ],
+      "flags": {
+        "newArrival": true,
+        "bestseller": true,
+        "sale": true,
+        "featured": false
+      },
+      "published": true,
+      "createdAt": "2026-09-14"
+    }
+  ]
+}

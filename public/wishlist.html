@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wishlist — SANJHH BY AM</title>
+  <meta name="description" content="Your saved SANJHH BY AM pieces — keep track of the styles you love.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="siteChrome"></div>
+  <main class="container">
+    <div class="shop-head"><span class="kicker">Saved For Later</span><h1>Your Wishlist</h1></div>
+    <section class="block tight">
+      <div class="grid" id="wishGrid"></div>
+      <div id="wishEmpty"></div>
+    </section>
+  </main>
+  <div id="siteFooter"></div>
+  <script src="js/app.js"></script>
+  <script>
+    window.renderWishlistPage = function () {
+      const ids = SBAM.wishlist();
+      const items = ids.map((id) => SBAM.byId(id)).filter(Boolean);
+      document.getElementById('wishGrid').innerHTML = items.map((p) => SBAM.productCard(p)).join('');
+      document.getElementById('wishEmpty').innerHTML = items.length ? '' :
+        `<div class="empty-state"><div class="big">Nothing saved yet</div>
+         <p>Tap the heart on any piece to keep it here.</p>
+         <a class="btn sm" href="shop.html">Discover the Collection</a></div>`;
+    };
+    SBAM.ready(renderWishlistPage);
+  </script>
+</body>
+</html>

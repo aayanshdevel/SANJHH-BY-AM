@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Bag — SANJHH BY AM</title>
+  <meta name="description" content="Review your SANJHH BY AM shopping bag and proceed to a secure checkout.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="siteChrome"></div>
+  <main class="container">
+    <div class="shop-head"><span class="kicker">Shopping</span><h1>Your Bag</h1></div>
+    <div class="checkout-layout">
+      <div id="cartLines"></div>
+      <div class="panel" id="cartSummary" style="position:sticky;top:96px"></div>
+    </div>
+  </main>
+  <div id="siteFooter"></div>
+  <script src="js/app.js"></script>
+  <script>
+    window.renderCartPage = function () {
+      const lines = document.getElementById('cartLines');
+      const sum = document.getElementById('cartSummary');
+      const cart = SBAM.cart();
+      if (!cart.length) {
+        lines.innerHTML = `<div class="empty-state"><div class="big">Your bag is empty</div>
+          <p>Discover pieces made for brighter days.</p><a class="btn sm" href="shop.html">Shop the Collection</a></div>`;
+        sum.style.display = 'none';
+        return;
+      }
+      sum.style.display = '';
+      lines.innerHTML = cart.map((l, i) => {
+        const p = SBAM.byId(l.productId); if (!p) return '';
+        return `<div class="cart-line" style="grid-template-columns:110px 1fr auto">
+          <a href="product.html?p=${p.slug}"><img src="${p.images[0].src}" alt="${SBAM.esc(p.images[0].alt)}" style="width:110px;height:146px"></a>
+          <div>
+            <div class="n"><a href="product.html?p=${p.slug}">${SBAM.esc(p.name)}</a></div>
+            <div class="meta">Size ${l.size} · ${SBAM.esc(p.color?.name || '')}</div>
+            <div class="p">${SBAM.money(p.salePrice)} <span class="mrp">${SBAM.money(p.mrp)}</span> <span class="off">${p.discountPct}% OFF</span></div>
+            <div class="qty-mini">
+              <button data-q="-1" data-i="${i}">−</button><span>${l.qty}</span><button data-q="1" data-i="${i}">+</button>
+            </div>
+          </div>
+          <button class="rm" data-x="${i}">Remove</button>
+        </div>`;
+      }).join('');
+      const sub = SBAM.cartSubtotal();
+      const s = SBAM.settings?.shipping || {};
+      const ship = sub >= (s.freeAbove ?? 1999) ? 0 : (s.flatRate ?? 79);
+      sum.innerHTML = `<h3>Order Summary</h3>
+        <div class="summary-line"><span>Subtotal</span><span>${SBAM.money(sub)}</span></div>
+        <div class="summary-line"><span>Shipping</span><span>${ship ? SBAM.money(ship) : 'Free'}</span></div>
+        <div class="summary-line total"><span>Total</span><span>${SBAM.money(sub + ship)}</span></div>
+        <p style="font-size:12px;color:var(--taupe)">Coupons and COD charges (if any) are applied at checkout.</p>
+        <a class="btn block" href="checkout.html">Proceed to Checkout</a>
+        <a class="btn ghost block" style="margin-top:10px" href="shop.html">Continue Shopping</a>`;
+      lines.querySelectorAll('[data-q]').forEach((b) => b.onclick = () => {
+        const c = SBAM.cart(); const i = +b.dataset.i;
+        const p = SBAM.byId(c[i].productId);
+        const max = Math.min(10, (p.stock && p.stock[c[i].size]) || 10);
+        c[i].qty = Math.max(1, Math.min(max, c[i].qty + (+b.dataset.q)));
+        SBAM.saveCart(c); renderCartPage();
+      });
+      lines.querySelectorAll('[data-x]').forEach((b) => b.onclick = () => {
+        const c = SBAM.cart(); c.splice(+b.dataset.x, 1);
+        SBAM.saveCart(c); renderCartPage();
+      });
+    };
+    SBAM.ready(renderCartPage);
+  </script>
+</body>
+</html>

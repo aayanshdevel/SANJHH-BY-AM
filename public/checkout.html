@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout — SANJHH BY AM</title>
+  <meta name="description" content="Secure checkout — pay online or choose Cash on Delivery.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="siteChrome"></div>
+  <main class="container">
+    <div class="shop-head"><span class="kicker">Almost There</span><h1>Checkout</h1></div>
+    <div class="checkout-layout">
+      <form class="panel" id="checkoutForm" novalidate>
+        <h3>Contact & Delivery</h3>
+        <div class="form-grid">
+          <div class="field full"><label for="f-name">Full Name *</label><input id="f-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="f-phone">Mobile Number *</label><input id="f-phone" name="phone" inputmode="numeric" autocomplete="tel" maxlength="10" placeholder="10-digit mobile" required></div>
+          <div class="field"><label for="f-email">Email *</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field full"><label for="f-address">Address (house no, street, landmark) *</label><textarea id="f-address" name="address" rows="3" autocomplete="street-address" required></textarea></div>
+          <div class="field"><label for="f-city">City *</label><input id="f-city" name="city" autocomplete="address-level2" required></div>
+          <div class="field"><label for="f-state">State *</label>
+            <select id="f-state" name="state" required>
+              <option value="">Select state</option>
+            </select>
+          </div>
+          <div class="field"><label for="f-pin">PIN Code *</label><input id="f-pin" name="pincode" inputmode="numeric" maxlength="6" autocomplete="postal-code" required></div>
+        </div>
+
+        <h3 style="margin-top:30px">Payment</h3>
+        <label class="pay-opt on" id="optOnline">
+          <input type="radio" name="pay" value="online" checked>
+          <span><span class="t">Pay Online</span>
+          <span class="d" id="onlineDesc">UPI, cards, netbanking &amp; wallets via secure payment gateway.</span></span>
+        </label>
+        <label class="pay-opt" id="optCod">
+          <input type="radio" name="pay" value="cod">
+          <span><span class="t">Cash on Delivery</span>
+          <span class="d" id="codDesc">Pay in cash when your order arrives.</span></span>
+        </label>
+
+        <div class="field" style="margin-top:16px"><div class="err" id="formError" style="display:none;font-size:13px"></div></div>
+        <button class="btn block" type="submit" id="placeBtn" style="margin-top:8px">Place Order</button>
+        <p style="font-size:11.5px;color:var(--taupe);text-align:center;margin-top:12px">
+          Prices are verified and payments are confirmed securely on our servers.
+        </p>
+      </form>
+
+      <div class="panel" style="position:sticky;top:96px">
+        <h3>Your Order</h3>
+        <div id="summaryItems"></div>
+        <div class="coupon-row">
+          <input id="couponInput" placeholder="Coupon code">
+          <button class="btn sm ghost" type="button" id="couponBtn">Apply</button>
+        </div>
+        <div id="couponMsg" style="font-size:12.5px;margin:-6px 0 8px"></div>
+        <div id="summaryTotals"></div>
+      </div>
+    </div>
+  </main>
+  <div id="siteFooter"></div>
+  <script src="js/app.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>
